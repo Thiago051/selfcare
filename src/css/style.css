@@ -68,8 +68,8 @@
     justify-items: center;
     grid-template-columns: repeat(auto-fit,minmax(303px,1fr));
     row-gap: 65px;
-    column-gap: 100px;
-    padding: 50px 0;
+    column-gap: 70px;
+    padding: 50px 50px;
 }
 
 .container .products li img {
@@ -100,8 +100,6 @@
 /* FOOTER */
 .footer {
     background-color: #F9F9F9;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .footer .links {
@@ -125,10 +123,6 @@
     font-weight: 700;
     text-decoration: none;
     color: #161616;
-}
-
-.footer .links .newsletter {
-    padding-top: 40px;
 }
 
 .footer .links .newsletter label {
@@ -168,7 +162,6 @@
 .footer .social-payment {
     padding: 40px 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -186,4 +179,19 @@
 .footer .social-payment .payment li:nth-child(2) {
     margin-right: 20px;
     margin-left: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 985px) {
+
+    .footer .links .newsletter {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .footer .links .newsletter .email-input input,
+    .footer .links .newsletter .email-input button {
+        width: 100%;
+    }
+
 }
